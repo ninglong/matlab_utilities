@@ -1,0 +1,125 @@
+/L16"MatLab File" MATLAB_LANG case Line Comment = % Block Comment On = % String Chars = ' File Extensions = m M
+/Colors = 0,8421376,8421376,8421504,255,
+/Colors Back = 16777215,16777215,16777215,16777215,16777215,
+/Colors Auto Back = 1,1,1,1,1,
+/Font Style = 0,0,0,0,0,
+/Function String = "%[ ^t]++function*=[ ^t]++^([a-z0-9_]+^)"
+/Function String 1 = "%[ ^t]++function[ ^t]+^([a-z0-9_]+^)[ ^t]++[~=]"
+/Indent Strings SOL = "case" "catch" "else" "elseif" "if" "otherwise" "switch" "try" "while"
+/Unindent Strings = "case" "catch" "else" "elseif" "end"
+/Open Fold Strings = "function" "if" "for" "while" "switch"
+/Close Fold Strings = "function" "end"
+/Open Comment Fold Strings = "%"
+/Open Brace Strings = "{" "(" "["
+/Close Brace Strings = "}" ")" "]"
+/Delimiters = ~!@$^&*()-+=|\/{}[]:;"'<> ,	.?
+/C1"Statements" Colors = 16711680 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+   assert
+   break
+   case catch continue
+   else elseif end exit
+   finish for function
+   global
+   if
+   keyboard
+   otherwise
+   parfor persistent
+   quit
+   rethrow return
+   switch
+   try throw
+   while
+/C2"Supplied functions" Colors = 255 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+   abs accumarray acos acosd acosh acot acotd acoth acsc acscd acsch actxcontrol actxcontrollist actxcontrolselect actxGetRunningServer actxserver addCause addevent addframe addlistener addprop addsample addsampletocollection addtodate addts airy all allchild amd ancestor and angle ans any Areaseries arrayfun asec asecd asech asin asind asinh atan atan2 atand atanh audiodevinfo audioplayer audiorecorder aufinfo auread  avifile aviinfo aviread
+   balance base2dec besselh besseli besselj besselk bessely beta betainc betaincinv betaln bicg bicgstab bicgstabl bin2dec bitand bitcmp bitget bitmax bitor bitset bitshift bitxor blanks blkdiag bsxfun builtin bvp4c bvp5c bvpget bvpinit bvpset bvpxtend
+   calendar calllib cart2pol cart2sph cast cat cdf2rdf cdfepoch cdfinfo cdfread ceil cell cell2mat cell2struct cellfun cellstr cgs char chol cholinc cholupdate circshift class classdef clock cmopts cmpermute cmunique colamd colperm compan complex computer cond condeig condest conj contrast conv conv2 convhull convhulln convn copyobj corrcoef cos cosd cosh cot cotd coth cov cplxpair cputime create createClassFromWsdl createCopy createSoapMessage cross csc cscd csch csvread ctranspose cumprod cumsum cumtrapz curl customverctrl cylinder
+   daqread date datenum datestr datevec dblquad dde23 ddeget ddesd ddeset deal deblank dec2base dec2bin dec2hex decic deconv del2 delaunay delaunay3 delaunayn delevent delsample delsamplefromcollection depdir depfun det detrend deval diag dialog diff diffuse disp display dither divergence dlmread dmperm dot double dragrect dsearch dsearchn dynamicprops
+   eig eigs ellipj ellipke ellipsoid enableservice eomday eps eq erf erfc erfcinv erfcx erfinv errordlg etime etree evalc event eventlisteners events exifread exist exp expint expm expm1 eye
+   factor factorial fclose feof ferror Feval fft fft2 fftn fftshift fgetl fgets fieldnames filemarker fileparts fileread filesep fill fill3 filter filter2 find findall findprop findstr fitsinfo fitsread fix flipdim fliplr flipud floor flow fminbnd fminsearch fopen frame2im fread freqspace fscanf ftell ftp full fullfile func2str functions funm fzero gallery
+   gamma gammainc gammaincinv gammaln gca gcd ge genpath genvarname getabstime getappdata getdatasamplesize getdisp getenv getfield getframe getinterpmethod getpixelposition getpref getqualitydesc getReport getsampleusingtime gettimeseriesnames gettsafteratevent gettsafterevent gettsatevent gettsbeforeatevent gettsbeforeevent gettsbetweenevents  ginput gmres gradient griddata griddata3 griddatan gsvd gt guihandles
+   GetFullMatrix GetVariable GetWorkspaceData
+   hadamard handle hankel hdf5info hdf5read hdfinfo hdfread hess hex2dec hex2num hggroup hgload hgsetget hgtransform hilb horzcat hostid hsv2rgb hypot
+   idealfilter idivide ifft ifft2 ifftn ifftshift ilu im2frame im2java imag imapprox imfinfo imformats imread ind2rgb ind2sub Inf inline inmem inpolygon input inputdlg inputname inputParser instrcallback instrfind instrfindall int16 int2str int32 int64 int8 interfaces interp1 interp1q interp2 interp3 interpft interpn interpstreamspeed intersect intmax intmin inv invhilb invoke ipermute iqr isa isappdata iscell iscellstr ischar iscom isdir isempty isequal isequalwithequalnans isevent isfield isfinite isfloat isglobal ishandle ishold isinf isinteger isinterface isjava isKey iskeyword isletter islogical ismac ismember ismethod isnan isnumeric isobject isocaps isocolors isonormals isosurface ispc ispref isprime isprop isreal isscalar issorted isspace issparse isstr isstrprop isstruct isstudent isunix isvalid isvarname isvector
+   javaArray  javaclasspath javaObject javaObjectEDT
+   keys kron
+   last lasterr lasterror lastwarn lcm ldivide ldl le legendre length libfunctions libfunctionsview libisloaded libpointer libstruct lin2mu LineSpec linkprop linsolve linspace listdlg listfonts  loadobj log log10 log1p log2 logical logm logspace lower lscov lsqnonneg lsqr lt lu luinc
+   magic makehgtform mat2cell mat2str matlabroot max maxNumCompThreads mean median memmapfile menu meshgrid metaclass  mex.getCompilerConfigurations MException mexext mfilename mget min minres mislocked mkpp mldivide mmfileinfo mmreader mod mode move mrdivide msgbox mtimes mu2lin multibandread
+   namelengthmax nargchk nargin nargout nargoutchk native2unicode nchoosek ndgrid ndims ne  netcdf.abort netcdf.close netcdf.copyAtt netcdf.create netcdf.defDim netcdf.defVar netcdf.delAtt netcdf.endDef netcdf.getAtt netcdf.getConstant netcdf.getConstantNames netcdf.getVar netcdf.inq netcdf.inqAtt netcdf.inqAttID netcdf.inqAttName netcdf.inqDim netcdf.inqDimID netcdf.inqLibVers netcdf.inqVar netcdf.inqVarID netcdf.open netcdf.putAtt netcdf.putVar netcdf.reDef netcdf.renameAtt netcdf.renameDim netcdf.renameVar netcdf.setDefaultFormat netcdf.setFill netcdf.sync nextpow2 nnz nonzeros norm normest not now nthroot null num2cell num2hex num2str numel nzmax
+   NaN NET NET.addAssembly NET.convertArray NET.createArray NET.createGeneric
+   ode113 ode15i ode15s ode23 ode23s ode23t ode23tb ode45 odeget odeset odextend onCleanup ones optimget optimset or ordeig orderfields ordqz ordschur orth
+   padecoef pagesetupdlg parse parseSoapResponse pascal pathsep pbaspect pcg pchip pdepe pdeval perms permute pinv planerot pol2cart poly polyarea polyder polyeig polyfit polyint polyval polyvalm pow2 ppval primes prod psi
+   qmr qr qrdelete qrinsert qrupdate quad quad2d quadgk quadl quadv questdlg qz
+   rand randi randn randperm RandStream rank rat rats rcond rdivide read real reallog realmax realmin realpow realsqrt rectint recycle reducepatch reducevolume regexp regexpi regexprep regexptranslate release rem removets repmat resample reshape residue rgb2hsv rgb2ind rmfield roots rosser rot90 round rref rsf2csf
+   saveobj schur sec secd sech selectmoveresize serial serial.delete serial.disp serial.fclose setabstime setDefaultStream setdiff setdisp setfield setinterpmethod setstr settimeseriesnames setxor shiftdim shrinkfaces sign sin sind single sinh size smooth3 sort sortrows spalloc sparse spaugment spconvert spdiags specular speye spfun sph2cart spline spones sprand sprandn sprandsym sprank sprintf sqrt sqrtm squeeze ss2tf sscanf std str2double str2func str2mat str2num strcat strcmp strcmpi stream2 stream3 strfind strjust strmatch strncmp strncmpi strread strrep strtok strtrim struct struct2cell structfun strvcat sub2ind subsasgn subsindex subspace subsref substruct subvolume sum superiorto surf2patch svd svds swapbytes symamd symbfact symmlq symrcm symvar synchronize
+   tan tand tanh tempdir tempname texlabel textread textscan textwrap tfqmr throwAsCaller timer timerfind timerfindall timeseries todatenum toeplitz trace transpose trapz treelayout tril triplequad triu tscollection tsdata.event tsearch tsearchn typecast
+   uibuttongroup uigetdir uigetfile uigetpref uint16 uint32 uint64 uint8 uipanel uipushtool uisave uisetcolor uisetfont uisetpref uistack uitable uitoggletool uitoolbar unicode2native union unique unmesh unmkpp unregisterallevents unregisterevent unwrap upper urlread  usejava
+   validatestring values vander var vectorize verLessThan version vertcat viewmtx volumebounds voronoin
+   waitforbuttonpress wavfinfo wavread wavrecord weekday wilkinson winqueryreg wk1finfo wk1read
+   xlsfinfo xlsread xmlread xor xslt
+   zeros
+/C3"Commands" Colors = 33023 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+   addOptional addParamValue addpath addpref addproperty addRequired align alim alpha alphamap annotation area ascii assignin auwrite axes axis
+   bar barh bar3 bar3h beep bench binary box brighten brush builddocsearchdb
+   callSoapService camdolly cameratoolbar camlight camlookat camorbit campan campos camproj camroll camtarget camup camva camzoom caxis cd cdfwrite celldisp cellplot checkin checkout cla clabel clc clear clearvars clf clipboard close closereq colorbar colordef colormap colormapeditor comet comet3 commandhistory commandwindow compass coneplot contour contour3 contourc contourf contourslice copyfile csvwrite
+   daspect datacursormode datatipinfo datetick dbclear dbcont dbdown dbmex dbquit dbstack dbstatus dbstep dbstop dbtype dbup debug delete deleteproperty demo diary dir dlmwrite doc docopt docsearch dos drawnow
+   echo echodemo edit error errorbar etreeplot eval evalin export2wsdlg ezcontour ezcontourf ezmesh ezmeshc ezplot ezplot3 ezpolar ezsurf ezsurfc
+   Execute
+   feather fftw figure figurepalette fileattrib filebrowser findfigs findobj format fplot fprintf frewind fseek fwrite
+   gcbf gcbo gcf gco get gcbh gplot grabcode graymon grid gtext guidata guide gunzip gzip
+   hdf hdf5 hdf5write hdftool help helpbrowser helpdesk helpdlg helpwin hgexport hgsave hidden hist histc hold home
+   image imagesc import importdata imwrite inferiorto info inspect intwarning
+   javaaddpath javachk javaMethod javarmpath
+   legend license light lightangle lighting line linkaxes linkdata load loadlibrary loglog lookfor ls
+   material memory mesh meshc meshz methods methodsview mex mkdir mlint mlintrpt mlock more movefile movegui movie movie2avi mput multibandwrite munlock
+   newplot noanimate notebook notify
+   open openfig opengl openvar orient
+   pack pan pareto patch path path2rc pathtool pause pcode pcolor peaks perl pie pie3 playshow plot plot3 plotbrowser plotedit plotmatrix plottools plotyy polar prefdir preferences print printdlg printopt printpreview profile profsave propedit properties propertyeditor publish pwd
+   PutCharArray PutFullMatrix PutWorkspaceData
+   quiver quiver3
+   rbbox readasync record rectangle refresh refreshdata registerevent rehash remove rename reset restoredefaultpath rgbplot ribbon rmappdata rmdir rmpath rmpref rose rotate rotate3d run
+   save saveas savepath scatter scatter3 semilogx semilogy sendmail serialbreak set setappdata setenv setpixelposition setpref shading shg showplottool slice snapnow sound soundsc sphere spinmap spparms spy stairs start startat startup stem stem3 stop stopasync streamline streamparticles streamribbon streamslice streamtube subplot support surf surface surfc surfl surfnorm system
+   tar tetramesh text tic title toc toolboxdir treeplot trimesh triplot trisurf tstool type
+   uicontrol uimenu uicontextmenu uiimport uiopen uiputfile uiresume uiwait undocheckout unix unloadlibrary untar unzip urlwrite userpath
+   validateattributes ver verctrl view visdiff voronoi
+   wait waitbar waitfor warndlg warning waterfall wavplay wavwrite web what whatsnew which whitebg who whos winopen wk1write workspace
+   xlabel xlim xlswrite xmlwrite
+   ylabel ylim
+   zip zlabel zlim zoom
+/C4"Operators" Colors = 32768 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+   !
+   ~
+   &
+   '
+   *
+   +
+   -
+   .* ./ .\ .^
+   // /
+   <
+   =
+   >
+   \
+   ^
+   {
+   |
+   }
+/C5"Defined constants" Colors = 4210816 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+   auto
+   default dull
+   equal
+   faceted false fill flat
+   gouraud
+   hardware
+   i ij image info interp
+   j
+   landscape
+   manual metal
+   none normal
+   off on
+   phong pi portrait
+   quiet
+   shiny software square
+   tall tight true
+   verbose vis3d
+   xon xy
+   yon

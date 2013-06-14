@@ -1,0 +1,38 @@
+// This macro is used to call batch-modified turboreg (TurboRegMod) 
+//  from a MATLAB invocation of image J. (i.e., MATLAB system call to java).
+
+macro "TurboReg from MATLAB" {tregml();}
+
+function tregml() {
+  // read command line stuff
+  arg = split(getArgument(), ",");
+  source_fname = arg[0];
+  target_fname = arg[1];
+  output_fname = arg[2];
+  width = parseInt(arg[3]);
+  height = parseInt(arg[4]);
+
+  run("TurboReg ",
+    "-align " // Register the two images that we have just prepared.
+    + "-file " + source_fname + " " // source file
+    + "0 0 " + (width ) + " " + (height ) + " " // No cropping.
+    + "-file " + target_fname + " "// Target (file reference).
+    + "0 0 " + (width ) + " " + (height ) + " " // No cropping.
+    + "-rigidBody " // This corresponds to rotation and translation.
+    + (width / 2) + " " + (height / 2) + " " // Source translation landmark.
+    + (width / 2) + " " + (height / 2) + " " // Target translation landmark.
+    + "0 " + (height / 2) + " " // Source first rotation landmark.
+    + "0 " + (height / 2) + " " // Target first rotation landmark.
+    + (width - 1) + " " + (height / 2) + " " // Source second rotation landmark.
+    + (width - 1) + " " + (height / 2) + " " // Target second rotation landmark.
+    + "-showOutput"); // In case -hideOutput is selected, the only way to
+    
+  // select
+  selectWindow("Registered");
+
+  // save
+  saveAs("tiff", output_fname);
+  
+  // exit
+  run ("Quit");
+}

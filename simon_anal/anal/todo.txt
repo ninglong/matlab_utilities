@@ -1,0 +1,128 @@
+current sorted priorities:
+--------------------------
+- fluo_control_main: mutli-directories
+- fluo_control_main: handle in-processor changes of output name (e.g., imreg 
+  needs to output to separate files in a chain to accomodate imreg_postproc)
+
+- imreg_piecewise:fft before
+- imreg_piecewise:edge FX!!
+
+- separate displacement correction from imreg_wrapup ; make it separate processor
+- deal with interprocessor communication by passing retparams (e.g., 0)  as params
+  (again, e.g., 0)
+
+- DH's data
+
+- schnitzer implement
+
+- fluo_display:FRAME NUMBER!!
+- fluo_display:play button
+
+- fluo_control_main:regexp in dir names
+
+- HMM: hysteresis based
+- HMM: read up in it
+- HMM: 2007 compatible
+- HMM: kill gain, other useless params
+
+
+- ROI autodetect
+- use Vijay's scimOpenTif.m
+
+- process: be able to apply transforms, gui-driven too, on a per-trial//per-frame//per-day basis
+- process: be able to output to file for SINGLE processing ; also, range of files
+- process: if user hits run w/o specifying output path, warn : will not output
+	but if output path IS specified, output thereto
+- process: if user clicks on an unrun process, RUN IT and its unrun predecessors 
+
+- "bug" - uint16 means no -1 ; F = F + 1, so that 0 means nothing ; processor for this step!
+
+- process/imreg: flag to let it know that it is running in batch & parallel mode (chgs output)
+- greenberg/hmm/etc: disable waitbars etc. for parallel
+
+- efficient rigid with rotation registatrion -- gradient descent
+- imreg_rigid : wait bar
+- imreg_rigid_3d -- affine transform with perspective shift in 3d
+
+- all imreg methods return [dP dtheta], which are matrices with indexing ({x,y,z}, frame#, time)
+  imreg_wrapup deals with this accordingly
+
+- imreg: stillest consecutive n frames 
+
+
+- potentially -- 3d registration with warp field a la thin plate spline
+- unwarpJ?
+
+- plot ev. series, trial type, etc.
+
+- trial integratior: basic gui
+- trial integratior: get bit code
+- trial integratior: scanimg hdr?
+- trial integratior: ephus hdr?
+- trial sorting by fluo stuff -- off file name, # -- able to enter wildcard?
+
+- roi-detect:correlation-based
+- roi-detect:ica/pca based
+- roi-detect:morphology based
+
+- blue hit ; red CR ; grey FA ; green miss
+
+- DEFAULT gui settings at init -- SET all properties
+- LOAD saved gui settings same way 
+
+ideas for roi detection // image registration
+---------------------------------------------
+** DO SYSTEMATICALLY IN .m FILES **
+- max_projection-mean_projection leaves you with areas of high activity -- better yet,
+  use median ; this will detect things like dendrites
+- figure out how to detect the dark centers of cells; then you can solve both
+- figure out how to detect dark centers of BLOOD VESSELS ; then you are done
+
+- 2) elastic registration - detect ~20-100 landmarks, fairly uniformly distributed, 
+     then compute their com, align these, then determine landmark displacement;
+		 for each pixel, implement displacement by weighing markers by distance
+- 3) tplsm specific registration - ???
+
+bugs/critical
+-------------
+
+- ROI time series should be stored SEPARATELY from roi position, and clearly
+  associated with whatever image trace it comes from
+- plot_all_rois_one_trial_button_Callback: improper use of roi colors; be sure to
+  actually store colors from ROI file so you can see it -- indeed, how to correlate
+	processed with ROI file reliably?  store ROI struct?
+
+todo
+----
+- proper preselection of directories when invoking file/dir selection guis
+
+- figure deletion: handles.figure1
+
+- fluo_roi_control should also have dt/frame rate; how relate to roi_timeseries_control?
+
+- save processor step chains ; add "overwrite" flag so that already-performed
+  steps can be skipped OR repeated based on user choice in EACH processor gui
+
+- processors: manually move/rotate images in a stack
+- processors: alternate image alignment schemas
+- processors: 512x256 -> 256x256 -- binning
+- processors: temporal binning
+- processors: ICA for fluo id
+- processors: maximum projection
+- processors: mean image
+- processors: pix w/ max sd
+
+- fluo_display:config:save user prefs/load user prefs
+- fluo_display:config:save gui positions/load gui positions/enable & disable autosave
+
+- setup a system of warnings with checkboxes, so user can get info, but never 
+  see it again "help message bla bla bla ; do not show message again ( )"
+
+- message/log gui for user
+
+- ALL guis: any text element that is *saved* should have a light blue background
+
+bugs/not critical
+-----------------
+
+- fluo_roi_control:when you do plot, it should only do selected ROIs
